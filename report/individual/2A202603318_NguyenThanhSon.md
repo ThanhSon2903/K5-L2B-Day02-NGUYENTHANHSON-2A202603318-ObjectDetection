@@ -62,7 +62,7 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 - Nhận xét: Mô hình chưa phân biệt chính xác giữa hai class car và van. Điều này có thể xuất phát từ sự tương đồng về hình dáng bên ngoài của phương tiện hoặc đặc trưng hình ảnh chưa đủ rõ để mô hình nhận diện chính xác. Đây là một trường hợp phân lớp nhầm (False Positive đối với class van và có thể là False Negative đối với class car). Cần kiểm tra lại bounding box, nhãn Ground Truth và đối chiếu với quy tắc phân lớp trong guideline để xác định nguyên nhân cụ thể.
 
 Trả lời bốn câu hỏi cuối notebook:
-1. Lớp có recall thấp nhất là bus (Recall = 0). Cụ thể là bức ảnh `drive_058.jpg`
+1. Lớp có recall thấp nhất là bus (Recall = 0). Cụ thể là bức ảnh [drive_058.jpg](assets/eval_predictions/visuals/drive_058.jpg)
 2. Nếu mAP50 cao nhưng mAP50–95 thấp, cần kiểm tra độ chính xác vị trí và kích thước bounding box. Box có thể phát hiện đúng đối tượng nhưng chưa khớp sát với Ground Truth ở các ngưỡng IoU cao.
 3. Các lỗi liên quan đến class truck, bus và van có thể liên quan đến quy tắc phân biệt class trong guideline. Tuy nhiên, cần xem ảnh dự đoán và Ground Truth cụ thể để xác nhận, không thể kết luận chỉ từ metrics tổng hợp.
 4. Không dùng 10 ảnh eval để train vì sẽ gây rò rỉ dữ liệu, làm mất tính khách quan của đánh giá. Trong notebook, dữ liệu eval được sử dụng để validation, theo dõi hiệu suất và lựa chọn checkpoint tốt nhất (best.pt), sau đó đánh giá kết quả dự đoán.
