@@ -58,7 +58,7 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 - Link kết quả train/evaluate: [yolo26_runs](assets/yolo26_runs/)
 
 ### Phân tích ảnh dự đoán
-- Cụ thể trong bức ảnh `drive_056.jpg` thì bằng bắt thường có thể quan sát được là chiếc car nhưng mô hình lại dự đoán là class van
+- Cụ thể trong bức ảnh [drive_056.jpg](assets/eval_predictions/visuals/drive_056.jpg) thì bằng bắt thường có thể quan sát được là chiếc car nhưng mô hình lại dự đoán là class van
 - Nhận xét: Mô hình chưa phân biệt chính xác giữa hai class car và van. Điều này có thể xuất phát từ sự tương đồng về hình dáng bên ngoài của phương tiện hoặc đặc trưng hình ảnh chưa đủ rõ để mô hình nhận diện chính xác. Đây là một trường hợp phân lớp nhầm (False Positive đối với class van và có thể là False Negative đối với class car). Cần kiểm tra lại bounding box, nhãn Ground Truth và đối chiếu với quy tắc phân lớp trong guideline để xác định nguyên nhân cụ thể.
 
 Trả lời bốn câu hỏi cuối notebook:
