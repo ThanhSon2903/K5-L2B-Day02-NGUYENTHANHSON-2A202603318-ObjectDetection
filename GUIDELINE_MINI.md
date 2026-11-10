@@ -22,6 +22,7 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_...` | | | |
-| `drive_...` | | | |
-| `drive_...` | | | |
+| `drive_021.jpg` |Một chiếc car nằm sát mép ảnh, bị cắt một phần |Gán nhãn car, box giới hạn trong phần nhìn thấy |Vẫn nhận diện được class; không mở rộng box ra ngoài khung hình |
+| `drive_015.jpg` |Một chiếc car xuất hiện mở mờ giống với xe van|Gán nhãn car vì có thể xác định được |Phân lớp theo đặc điểm của phương tiện, không suy đoán khi ảnh không đủ thông tin |
+| `drive_039.jpg` |Chiếc xe bus chỉ hiển thị tầm 30% trong khung ảnh|Quyết định gán class là bus |Xác định được đó là xe bus vì có chiều dài khá dài và đang dừng đón khách |
+
