@@ -36,6 +36,7 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 | mean_iou_of_matches | 0.8521| |
 | passed |false| |
 
+-Link: [annotation_evaluation.json](../../outputs/annotation_evaluation.json)
 
 ## 5. Kết quả YOLO
 
